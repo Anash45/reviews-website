@@ -33,16 +33,20 @@
                             <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./testimonial.html">Testimonial</a>
+                            <a class="nav-link" href="./about.html">Testimonial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blog</a>
+                            <a class="nav-link" href="./#">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pricing.html">Pricing</a>
+                            <a class="nav-link" href="./index.html#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="phone-link" href="tel:+92(000)-000-00"><img src="./assets/img/call-outgoing-1.svg"
+                                    alt="call" class="call-icon"><span>+92(000)-000-00</span></a>
                         </li>
                     </ul>
                 </div>
@@ -58,18 +62,185 @@
                             </div>
                         </div>
                         <div class="col-lg-8 ps-xl-5 pb-lg-0">
-                            <form action="" method="post">
+                            <form action="./cart.html" method="post">
                                 <div class="d-flex flex-column gap-2">
                                     <h4 class="mb-0 pd-title fw-medium">Google Reviews</h4>
                                     <p class="mb-0">Select a number from the given below and continue</p>
                                 </div>
-                                <div class="flex flex-wrap gap-3">
+                                <div class="d-flex flex-wrap gap-3 pd-reviews">
                                     <label class="pd-review">
-                                        <input type="radio" class="form-check-input">
+                                        <input type="radio" class="form-check-input" name="reviews" value="1 review">
                                         <span>1 review</span>
                                     </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="5 reviews">
+                                        <span>5 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="10 reviews">
+                                        <span>10 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="15 reviews">
+                                        <span>15 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="30 reviews">
+                                        <span>30 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="50 reviews">
+                                        <span>50 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="100 reviews">
+                                        <span>100 reviews</span>
+                                    </label>
+                                    <label class="pd-review">
+                                        <input type="radio" class="form-check-input" name="reviews" value="150 reviews">
+                                        <span>150 reviews</span>
+                                    </label>
+                                </div>
+                                <div class="pd-prices">
+                                    <span class="pd-discounted-price">$71.56</span><span
+                                        class="pd-original-price">$81.56</span>
+                                </div>
+                                <div class="pd-border"></div>
+                                <div class="form-group">
+                                    <label for="insta-link" class="pd-label">Link to Instagram post * (NOT
+                                        USERNAME)</label>
+                                    <div class="d-flex pd-form-flex flex-sm-row flex-column">
+                                        <input type="text" name="insta-link" id="insta-link"
+                                            placeholder="Example: https://www.instagram.com/p/BnCzwC9nBvc/"
+                                            class="form-control pd-inp form-control-lg rounded-pill">
+                                        <button type="submit" class="btn btn-primary pd-btn">Add to Cart</button>
+                                    </div>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="pd-bottom d-flex flex-column">
+                        <div class="d-flex flex-column">
+                            <h3 class="pd-desc-title fw-semibold">Description</h3>
+                            <p class="pd-desc-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic in esse ad dolor
+                                repellendus animi cum magni, fugit cupiditate sit impedit assumenda dolore vero saepe,
+                                pariatur officia accusantium magnam corrupti. Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Repellendus praesentium cupiditate sit animi minus ad consequuntur
+                                nemo velit sequi molestiae laudantium doloremque neque autem laborum quaerat, magni,
+                                similique architecto officiis?</p>
+                        </div>
+                        
+                        <div class="accordion pd-faq" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Semper lacus cursus porta, feugiat primis luctus ultric?</button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo.
+                                            Velna vitae auctor eros congue magna nihil impedit ligula risus. Mauris
+                                            donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida
+                                            donec enim ipsum porta justo integer at odio velna congue integer vitae
+                                            auctor eros dolor luctus odio placerat massa magna.</p>
+                                        <p class="mb-0"> Nullam rutrum eget nunc varius etiam mollis risus congue
+                                            aliquam etiam sapien egestas, congue gestas posuere cubilia congue ipsum
+                                            mauris lectus laoreet gestas neque vitae auctor eros dolor luctus odio
+                                            placerat magna cursus ollis risus congue aliquam etiam sapien egestas,
+                                            congue ges</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Semper lacus cursus porta, feugiat primis luctus ultric? </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo.
+                                            Velna vitae auctor eros congue magna nihil impedit ligula risus. Mauris
+                                            donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida
+                                            donec enim ipsum porta justo integer at odio velna congue integer vitae
+                                            auctor eros dolor luctus odio placerat massa magna.</p>
+                                        <p class="mb-0"> Nullam rutrum eget nunc varius etiam mollis risus congue
+                                            aliquam etiam sapien egestas, congue gestas posuere cubilia congue ipsum
+                                            mauris lectus laoreet gestas neque vitae auctor eros dolor luctus odio
+                                            placerat magna cursus ollis risus congue aliquam etiam sapien egestas,
+                                            congue ges</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Semper lacus cursus porta, feugiat primis luctus ultric? </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo.
+                                            Velna vitae auctor eros congue magna nihil impedit ligula risus. Mauris
+                                            donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida
+                                            donec enim ipsum porta justo integer at odio velna congue integer vitae
+                                            auctor eros dolor luctus odio placerat massa magna.</p>
+                                        <p class="mb-0"> Nullam rutrum eget nunc varius etiam mollis risus congue
+                                            aliquam etiam sapien egestas, congue gestas posuere cubilia congue ipsum
+                                            mauris lectus laoreet gestas neque vitae auctor eros dolor luctus odio
+                                            placerat magna cursus ollis risus congue aliquam etiam sapien egestas,
+                                            congue ges</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Semper lacus cursus porta, feugiat primis luctus ultric? </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo.
+                                            Velna vitae auctor eros congue magna nihil impedit ligula risus. Mauris
+                                            donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida
+                                            donec enim ipsum porta justo integer at odio velna congue integer vitae
+                                            auctor eros dolor luctus odio placerat massa magna.</p>
+                                        <p class="mb-0"> Nullam rutrum eget nunc varius etiam mollis risus congue
+                                            aliquam etiam sapien egestas, congue gestas posuere cubilia congue ipsum
+                                            mauris lectus laoreet gestas neque vitae auctor eros dolor luctus odio
+                                            placerat magna cursus ollis risus congue aliquam etiam sapien egestas,
+                                            congue ges</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Semper lacus cursus porta, feugiat primis luctus ultric? </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo.
+                                            Velna vitae auctor eros congue magna nihil impedit ligula risus. Mauris
+                                            donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida
+                                            donec enim ipsum porta justo integer at odio velna congue integer vitae
+                                            auctor eros dolor luctus odio placerat massa magna.</p>
+                                        <p class="mb-0"> Nullam rutrum eget nunc varius etiam mollis risus congue
+                                            aliquam etiam sapien egestas, congue gestas posuere cubilia congue ipsum
+                                            mauris lectus laoreet gestas neque vitae auctor eros dolor luctus odio
+                                            placerat magna cursus ollis risus congue aliquam etiam sapien egestas,
+                                            congue ges</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +256,7 @@
                         <a href="./index.html">Home</a>
                         <a href="./about.html">About</a>
                         <a href="./index.html#pricing">Pricing</a>
-                        <a href="./blog.html">Blog</a>
+                        <a href="./#">Blog</a>
                         <a href="./contact.html">Contact</a>
                     </div>
                 </div>
