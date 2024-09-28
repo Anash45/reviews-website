@@ -100,6 +100,21 @@ body {
 
 .rw-flex {
     gap: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.rw-flex.active::before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 70px;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    background-color: #1A56DB;
+    border-radius: 100px;
 }
 
 .rw-name {
@@ -894,7 +909,9 @@ section.search {
     font-size: 16px;
     margin-bottom: 0;
 }
-
+.rw-flex>.dont-hide{
+    display: flex !important;
+}
 @media (max-width: 1399px) {
     .pricing-card {
         max-width: 435px;
@@ -933,6 +950,9 @@ section.search {
 
 @media (max-width: 991px) {
 
+    .rw-flex.active::before{
+        bottom: -22px;
+    }
     .rw-oval{
         padding: 20px;
     }
