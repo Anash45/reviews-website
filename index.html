@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./assets/css/slick.min.css">
         <link rel="stylesheet" href=".//assets/css/slick-theme.min.css">
         <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="./assets/css/style.css?v=1">
+        <link rel="stylesheet" href="./assets/css/style.css?v=2">
     </head>
 
     <body class="home-page">
@@ -92,8 +92,8 @@
             </section>
             <section class="reviews-websites py-5">
                 <div class="container">
-                    <div class="rw-oval">
-                        <div class="d-flex align-items-center rw-flex active" data-slide="0">
+                    <div class="rw-oval nav nav-tabs" id="myTab" role="tablist">
+                        <div class="d-flex align-items-center rw-flex active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
                             <img src="./assets/img/google-icon.svg" alt="Icon" class="rw-img">
                             <div class="d-flex flex-column gap-1">
                                 <span class="rw-name fw-medium">Google</span>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="rw-line"></div>
-                        <div class="d-flex align-items-center rw-flex" data-slide="1">
+                        <div class="d-flex align-items-center rw-flex" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
                             <img src="./assets/img/proven-expert-icon.svg" alt="Icon" class="rw-img">
                             <div class="d-flex flex-column gap-1">
                                 <span class="rw-name fw-medium">Provenexpert</span>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="rw-line"></div>
-                        <div class="d-flex align-items-center rw-flex" data-slide="2">
+                        <div class="d-flex align-items-center rw-flex" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
                             <img src="./assets/img/trustpilot-icon.svg" alt="Icon" class="rw-img">
                             <div class="d-flex flex-column gap-1">
                                 <span class="rw-name fw-medium">Trustpilot</span>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="rw-line"></div>
-                        <div class="d-flex align-items-center rw-flex" data-slide="3">
+                        <div class="d-flex align-items-center rw-flex" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
                             <img src="./assets/img/fb-icon.svg" alt="Icon" class="rw-img">
                             <div class="d-flex flex-column gap-1">
                                 <span class="rw-name fw-medium">Facebook</span>
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                         <div class="rw-line"></div>
-                        <div class="d-flex align-items-center rw-flex" data-slide="4">
+                        <div class="d-flex align-items-center rw-flex" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="false">
                             <div class="d-flex dont-hide flex-column gap-1">
                                 <span class="rw-name fw-medium">Wunschplattform</span>
                                 <span class="rw-desc">reviews</span>
@@ -136,11 +136,11 @@
             </section>
             <section class="pricing pt-5" id="pricing">
                 <div class="container">
-                    <div class="prices-carousel">
-                        <div class="pc-item px-3 pb-5">
-                            <div class="row align-items-center position-relative">
+                    <div class="prices-carousel tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active pb-5" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                            <div class="pcc-flex d-flex align-items-center position-relative">
                                 <img src="./assets/img/Rectangle-blur.svg" alt="Rect" class="rect-blur">
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -177,7 +177,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto pc-center">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -227,7 +227,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -266,10 +266,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pc-item px-3">
-                            <div class="row align-items-center position-relative">
+                        <div class="tab-pane fade pb-5" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                            <div class="pcc-flex d-flex align-items-center position-relative">
                                 <img src="./assets/img/Rectangle-blur.svg" alt="Rect" class="rect-blur">
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -306,7 +306,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto pc-center">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -356,7 +356,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -395,10 +395,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pc-item px-3">
-                            <div class="row align-items-center position-relative">
+                        <div class="tab-pane fade pb-5" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                            <div class="pcc-flex d-flex align-items-center position-relative">
                                 <img src="./assets/img/Rectangle-blur.svg" alt="Rect" class="rect-blur">
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -435,7 +435,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto pc-center">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -485,7 +485,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -524,10 +524,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pc-item px-3">
-                            <div class="row align-items-center position-relative">
+                        <div class="tab-pane fade pb-5" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                            <div class="pcc-flex d-flex align-items-center position-relative">
                                 <img src="./assets/img/Rectangle-blur.svg" alt="Rect" class="rect-blur">
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -564,7 +564,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto pc-center">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -614,7 +614,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -653,10 +653,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pc-item px-3">
-                            <div class="row align-items-center position-relative">
+                        <div class="tab-pane fade pb-5" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                            <div class="pcc-flex d-flex align-items-center position-relative">
                                 <img src="./assets/img/Rectangle-blur.svg" alt="Rect" class="rect-blur">
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -693,7 +693,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto pc-center">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">
@@ -743,7 +743,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 px-2 py-2">
+                                <div class="pc-cont px-2 py-2">
                                     <div class="pricing-card mx-auto">
                                         <div class="d-flex flex-column pc-flex-1">
                                             <div class="d-flex flex-column pc-flex-2 gap-4">

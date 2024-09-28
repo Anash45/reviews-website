@@ -153,10 +153,16 @@ body {
     background-color: rgba(208, 208, 208, 0.7);
 }
 
+.pcc-flex{
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
 .pricing-card {
     padding: 42px 69px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 25px;
+    min-width: 350px !important;
 }
 
 .pc-center {
@@ -499,9 +505,20 @@ body {
 
 .slick-next {
     left: calc(50% + 30px);
+    transform: translateX(-50%);
+}
+.reviews-select{
+    background-color: rgba(26, 86, 219, 0.04);
+    padding: 22px 26px;
+    font-size: 14px;
+    line-height: 100%;
 }
 
+.reviews-select:focus{
+    box-shadow: none !important;
+}
 .slick-prev {
+    transform: translateX(-50%);
     left: calc(50% - 30px);
 }
 
@@ -1072,5 +1089,10 @@ section.search {
 @media (max-width: 575px) {
     .hi-oval {
         height: 40px;
+    }
+    .pricing-card{
+        min-width: 320px !important;
+        width: 330px !important;
+        padding: 40px 30px;
     }
 }
