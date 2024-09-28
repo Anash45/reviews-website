@@ -104,7 +104,7 @@ body {
     position: relative;
 }
 
-.rw-flex.active::before{
+.rw-flex.active::before {
     position: absolute;
     content: "";
     height: 4px;
@@ -151,11 +151,6 @@ body {
     border-radius: 100px;
     height: 30px;
     background-color: rgba(208, 208, 208, 0.7);
-}
-
-.pcc-flex{
-    overflow-x: auto;
-    scrollbar-width: none;
 }
 
 .pricing-card {
@@ -379,7 +374,7 @@ body {
     padding: 30px 0 !important;
 }
 
-.pd-faq .accordion-button::after{
+.pd-faq .accordion-button::after {
     background-image: url(../img/pd-faq-chev.svg);
     background-position: center;
     background-size: contain;
@@ -387,7 +382,7 @@ body {
     width: 16px !important;
 }
 
-[data-bs-toggle="tooltip"]{
+[data-bs-toggle="tooltip"] {
     cursor: pointer;
 }
 
@@ -507,16 +502,22 @@ body {
     left: calc(50% + 30px);
     transform: translateX(-50%);
 }
-.reviews-select{
+
+.reviews-select {
     background-color: rgba(26, 86, 219, 0.04);
     padding: 22px 26px;
     font-size: 14px;
     line-height: 100%;
 }
 
-.reviews-select:focus{
+.pc-cont {
+    flex-grow: 1;
+}
+
+.reviews-select:focus {
     box-shadow: none !important;
 }
+
 .slick-prev {
     transform: translateX(-50%);
     left: calc(50% - 30px);
@@ -926,15 +927,18 @@ section.search {
     font-size: 16px;
     margin-bottom: 0;
 }
-.rw-flex>.dont-hide{
+
+.rw-flex>.dont-hide {
     display: flex !important;
 }
+
 @media (max-width: 1399px) {
     .pricing-card {
         max-width: 435px;
         padding: 40px;
     }
-    .rw-oval{
+
+    .rw-oval {
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 0px !important;
@@ -946,7 +950,8 @@ section.search {
         gap: 30px;
         justify-content: space-between;
     }
-    .rw-flex{
+
+    .rw-flex {
         gap: 5px;
     }
 
@@ -963,23 +968,33 @@ section.search {
         height: 200px;
         width: 200px;
     }
+
+
+    .pcc-flex {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
 }
 
 @media (max-width: 991px) {
 
-    .rw-flex.active::before{
+    .rw-flex.active::before {
         bottom: -22px;
     }
-    .rw-oval{
+
+    .rw-oval {
         padding: 20px;
     }
-    .rw-img{
+
+    .rw-img {
         height: 30px;
         width: 30px;
     }
-    .rw-flex span{
+
+    .rw-flex span {
         font-size: 70%;
     }
+
     .pd-img-box {
         height: 100%;
     }
@@ -1036,9 +1051,10 @@ section.search {
 }
 
 @media (max-width: 767px) {
-    .rw-flex>div{
+    .rw-flex>div {
         display: none !important;
     }
+
     .process {
         width: 100%;
     }
@@ -1090,7 +1106,8 @@ section.search {
     .hi-oval {
         height: 40px;
     }
-    .pricing-card{
+
+    .pricing-card {
         min-width: 320px !important;
         width: 330px !important;
         padding: 40px 30px;
