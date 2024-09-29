@@ -32,28 +32,32 @@ $(document).ready(function () {
             ]
         });
     }
-    // if ($('.prices-carousel').length > 0) {
-    //     $('.prices-carousel').slick({
-    //         centerMode: false,
-    //         slidesToShow: 1,
-    //         focusOnSelect: false,
-    //         autoplay: false, // Autoplay enabled
-    //         autoplaySpeed: 2000, // Autoplay speed in milliseconds
-    //         dots: true, // Hide navigation dots
-    //         draggable: true, // Enable dragging
-    //         infinite: false, // Infinite looping
-    //         arrows: false, // Hide arrows
-    //     });
-    //     // Add click event to .rw-flex divs
-    //     $('.rw-flex').on('click', function () {
-    //         var slideIndex = $(this).data('slide');
-    //         $('.prices-carousel').slick('slickGoTo', slideIndex);
-    //     });
+    if ($('.pcc-flex').length > 0) {
+        function initializeSlick() {
+            if ($(window).width() < 1200) {
+                if (!$('.pcc-flex').hasClass('slick-initialized')) {
+                    $('.pcc-flex').slick({
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        variableWidth: true,
+                        centerMode: false,
+                        arrows: false,
+                    });
+                }
+            } else {
+                if ($('.pcc-flex').hasClass('slick-initialized')) {
+                    $('.pcc-flex').slick('unslick');
+                }
+            }
+        }
 
-    //     // Optionally, highlight the active dot
-    //     $('.prices-carousel').on('afterChange', function (event, slick, currentSlide) {
-    //         $('.rw-flex').removeClass('active');
-    //         $('.rw-flex[data-slide="' + currentSlide + '"]').addClass('active');
-    //     });
-    // }
+        // Initialize on document ready
+        initializeSlick();
+
+        // Reinitialize on window resize
+        $(window).resize(function () {
+            initializeSlick();
+        });
+    }
 })
