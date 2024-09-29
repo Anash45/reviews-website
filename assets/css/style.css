@@ -99,7 +99,7 @@ body {
 }
 
 .rw-flex {
-    gap: 18px;
+    gap: 8px;
     cursor: pointer;
     position: relative;
 }
@@ -1108,8 +1108,16 @@ section.search {
     }
 
     .pricing-card {
-        min-width: 320px !important;
-        width: 330px !important;
+        min-width: 300px !important;
+        width: 300px !important;
         padding: 40px 30px;
+    }
+
+    .pc-li, .pc-price-desc{
+        font-size: 16px;
+    }
+
+    .pc-title,.pc-price{
+        font-size: 30px;
     }
 }
