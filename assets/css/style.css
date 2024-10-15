@@ -991,7 +991,7 @@ section.search {
     } */
 
     .rect-blur {
-        display: none;
+        display: none !important;
     }
 
 
